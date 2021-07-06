@@ -8,5 +8,6 @@ namespace Memory
 {
     class CardToSymbolManager
     {
+        //Store information about card ID / Category / Symbol to display
     }
 }

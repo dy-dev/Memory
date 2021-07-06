@@ -9,5 +9,7 @@ namespace Memory
     class Score
     {
         private int m_iScoreValue;
+
+        private Game m_Game;
     }
 }

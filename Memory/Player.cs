@@ -8,5 +8,9 @@ namespace Memory
 {
     class Player
     {
+        private String m_sName;
+        
+        //Store all scores for this player
+
     }
 }

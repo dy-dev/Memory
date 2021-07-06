@@ -6,10 +6,15 @@ namespace Memory
     {
         static void Main(string[] args)
         {
-            Category cat = (Category)GetEnumSelection(nameof(Category), typeof(Category));
+            Category cat = (Category) GetEnumSelection(nameof(Category), typeof(Category));
             Difficulty diff = (Difficulty)GetEnumSelection(nameof(Difficulty), typeof(Difficulty));
 
             Console.WriteLine($"You selected {cat} and {diff}");
+
+            Game myGame = new Game(cat, diff);
+            myGame.StartGame();
+
+            Player p = new Player();
         }
 
         private static int GetEnumSelection(String enumName, Type enumType)
