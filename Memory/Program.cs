@@ -15,6 +15,12 @@ namespace Memory
             myGame.StartGame();
 
             Player p = new Player();
+
+
+            Card c1 = new Card(20);
+            Card c2 = new Card(42);
+            Card c3 = c1 + c2;
+            Card c4 = Card.Add(c1 , c2);
         }
 
         private static int GetEnumSelection(String enumName, Type enumType)
