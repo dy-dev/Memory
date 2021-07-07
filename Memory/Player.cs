@@ -11,6 +11,7 @@ namespace Memory
         public String Name { get; set; }
 
         //Store all scores for this player
+        public List<Score> PlayerScores { get; set; }
 
     }
 }

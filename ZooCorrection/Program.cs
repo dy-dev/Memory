@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace ZooCorrection
 {
@@ -6,11 +7,11 @@ namespace ZooCorrection
     {
         static void Main(string[] args)
         {
-            Animal[] zoo = new Animal[3];
-            zoo[0] = new Lion();
+            List<Animal> zoo = new List<Animal>();
+            zoo.Add(new Lion());
             zoo[0].Weight = 10;
 
-            zoo[1] = new Dolphin();
+            zoo.Add(new Dolphin());
             try
             {
                 zoo[1].Weight = 0;
@@ -21,7 +22,7 @@ namespace ZooCorrection
                 zoo[1].Weight =10;
 
             }
-            zoo[2] = new Eagle();
+            zoo.Add(new Eagle());
 
             VisitorCaretaker[] caretekers = new VisitorCaretaker[2];
             caretekers[0] = new Veterinary();
@@ -46,7 +47,6 @@ namespace ZooCorrection
                     hunter.Hunt(animal);
                 }
             }
-
         }
     }
 }
