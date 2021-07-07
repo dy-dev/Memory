@@ -8,10 +8,10 @@ namespace Memory
 {
     class Card
     {
-        int m_iCardID;
-        int m_iColumn;
-        int m_iLine;
-
+        public int CardID { get; set; }
+        public int Column { get; set; }
+        public int Line { get; set; }
+       
         #region Constructors
 
         /// <summary>
@@ -20,7 +20,7 @@ namespace Memory
         /// <param name="p_iCardID"></param>
         public Card(int p_iCardID)
         {
-            m_iCardID = p_iCardID;
+            CardID = p_iCardID;
         }
 
         /// <summary>
@@ -49,12 +49,12 @@ namespace Memory
 
         public static Card operator +(Card lhc, Card rhc)
         {
-            return new Card(lhc.m_iCardID + rhc.m_iCardID);
+            return new Card(lhc.CardID + rhc.CardID);
         }
 
         public static Card Add(Card lhc, Card rhc)
         {
-            return new Card(lhc.m_iCardID + rhc.m_iCardID);
+            return new Card(lhc.CardID + rhc.CardID);
 
         }
 

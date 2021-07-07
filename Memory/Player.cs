@@ -8,8 +8,8 @@ namespace Memory
 {
     class Player
     {
-        private String m_sName;
-        
+        public String Name { get; set; }
+
         //Store all scores for this player
 
     }

@@ -8,8 +8,8 @@ namespace Memory
 {
     class Score
     {
-        private int m_iScoreValue;
+        public int ScoreValue { get; set; }
 
-        private Game m_Game;
+        private Game Game { get; set; }
     }
 }

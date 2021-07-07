@@ -8,9 +8,9 @@ namespace Memory
 {
     class Game
     {
-        private Player m_Player;
-        private Category m_Category;
-        private Difficulty m_Difficulty;
+        public Player CurrentPlayer { get; set; }
+        public Category GameCategory { get; set; }
+        private Difficulty GameDifficulty { get; set; }
         
         //Lists of cards used for this game => Information about cards position will be found in the 
         //cards themselves
@@ -22,8 +22,8 @@ namespace Memory
 
         public Game(Category p_Cat, Difficulty p_Diff)
         {
-            m_Category = p_Cat;
-            m_Difficulty = p_Diff;
+            GameCategory = p_Cat;
+            GameDifficulty = p_Diff;
         }
 
         public void StartGame()
