@@ -18,9 +18,8 @@ namespace Memory
         /// Constructeur avec ID
         /// </summary>
         /// <param name="p_iCardID"></param>
-        public Card(int p_iCardID)
+        public Card()
         {
-            CardID = p_iCardID;
         }
 
         /// <summary>
@@ -45,23 +44,5 @@ namespace Memory
         }
         #endregion
 
-        //public void returnCard();
-
-        public static Card operator +(Card lhc, Card rhc)
-        {
-            return new Card(lhc.CardID + rhc.CardID);
-        }
-
-        public static Card Add(Card lhc, Card rhc)
-        {
-            return new Card(lhc.CardID + rhc.CardID);
-
-        }
-
-
-        virtual public void methode()
-        {
-
-        }
     }
 }

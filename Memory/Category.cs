@@ -9,7 +9,7 @@ namespace Memory
     enum Category
     {
         DISNEY,
-        STARWAR,
+        STARWARS,
         MARVEL,
         DUNGEON_AND_DRAGON
     }

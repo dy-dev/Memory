@@ -9,7 +9,7 @@ namespace Memory
 {
     class Symbol
     {
-        private Category Category { get; set; }
-        private MemoryStream ImageContentMemoryStream { get; set; }
+        public Category Category { get; set; }
+        public MemoryStream ImageContentMemoryStream { get; set; }
     }
 }

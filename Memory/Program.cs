@@ -7,6 +7,8 @@ namespace Memory
     {
         static void Main(string[] args)
         {
+
+            CardToSymbolManager.InitManager();
             Category cat = (Category) GetEnumSelection(nameof(Category), typeof(Category));
             Difficulty diff = (Difficulty)GetEnumSelection(nameof(Difficulty), typeof(Difficulty));
 
@@ -16,13 +18,6 @@ namespace Memory
             myGame.StartGame();
 
             Player p = new Player();
-
-
-            Card c1 = new Card(20);
-            Card c2 = new Card(42);
-            Card c3 = c1 + c2;
-            Card c4 = Card.Add(c1 , c2);
-
 
             Timer myTimer = new Timer();
             myTimer.Interval = 2000;
